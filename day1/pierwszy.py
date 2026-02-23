@@ -74,3 +74,17 @@ print(int(a) + b)  # 1, int() - rzutowanie na liczbę
 print(int(a) + int(b))  # 1
 
 print(str(1) + str(1))  # str() - rzutowanie na string
+
+print(type(1 + 2))  # <class 'int'>
+
+tekst = "Witaj Świecie"
+
+# teksty są niemutowalne
+tekst.upper()
+print(tekst)
+""" Return a copy of the string converted to uppercase. """
+print(tekst.upper())  # WITAJ ŚWIECIE
+
+nowy_tekst = tekst.upper()
+print(nowy_tekst)  # WITAJ ŚWIECIE
+
