@@ -226,9 +226,19 @@ print(p_s)  # {}
 # print(tekst)
 # print(type(tekst))
 
-a = input("Podaj pierwszą liczbę:")
-b = input("Podaj drugą liczbę:")
-print(int(a) + float(b))
+# a = input("Podaj pierwszą liczbę:")
+# b = input("Podaj drugą liczbę:")
+# print(int(a) + float(b))
 # Podaj pierwszą liczbę:1
 # Podaj drugą liczbę:2
 # 3.0
+
+print(pusty_slownik)  # {}
+pusty_slownik['name'] = "Radek"
+print(pusty_slownik)  # {'name': 'Radek'}
+
+pusty_slownik.update({"age": 67})
+print(pusty_slownik)
+
+p_s.update([('name', 'Radek'), ('age', 56)])
+print(p_s)  # {'name': 'Radek', 'age': 56}
