@@ -131,3 +131,73 @@ Tekst
     wielolinijkowy - dokumentacja"""
 
 print(print.__doc__)
+
+print(100 / 3)  # 33.333333333333336
+print(100 // 3)  # 33 część calkowita z dzielenia
+print(100 % 3)  # modulo, reszta z dzielenia
+print(10 % 3)  # 1
+
+zysk = 890123456543123
+print(f'Nasza duza liczba: {zysk:,}')  # Nasza duza liczba: 890,123,456,543,123
+print(f'Nasza duza liczba: {zysk:_}')  # Nasza duza liczba: 890,123,456,543,123
+print(f'Nasza duza liczba: {zysk:_}'.replace("_", " "))
+# Nasza duza liczba: 890 123 456 543 123
+
+liczba = 1_000_000_000_000_000
+print(type(liczba))
+print(liczba)  # <class 'int'>, 1000000000000000
+
+# kolekcje
+
+# lista - przechowuje eleemnty z zachowaniem kolejności
+lista = [1, 2, 3, 4, 5, 6, "Radek"]
+print(type(lista))  # <class 'list'>
+print(lista)  # [1, 2, 3, 4, 5, 6, 'Radek']
+
+lista = []  # tworzenie pustej listy
+lista.append("Radek")
+lista.append("Tomek")
+lista.append("Zenek")
+lista.append("Klaudia")
+lista.append("Jakub")
+print(lista)
+# ['Radek', 'Tomek', 'Zenek', 'Klaudia', 'Jakub']
+
+# usunięcie
+lista.remove("Radek")
+print(lista)  # ['Tomek', 'Zenek', 'Klaudia', 'Jakub']
+
+lista_copy = lista.copy()  # kopia danych
+lista_k = lista
+print(lista_k)  # ['Tomek', 'Zenek', 'Klaudia', 'Jakub']
+print(lista)  # ['Tomek', 'Zenek', 'Klaudia', 'Jakub']
+
+lista.clear()  # usunięcie wszystkich elementow z listy
+print(lista_copy)  # ['Tomek', 'Zenek', 'Klaudia', 'Jakub']
+print(lista)  # []
+print(lista_k)  # []
+
+# sprawdzenie adresu dla elementu
+print(id(lista_copy))  # 2605498290112
+
+# krotka (tuple) - kolekcja niemutowalna, do odczytu
+# pozwala lepiej zarządzać pamiecią
+
+krotka = tuple(lista_copy)
+print(type(krotka))  # <class 'tuple'>
+print(krotka)  # ('Tomek', 'Zenek', 'Klaudia', 'Jakub')
+
+tupla1 = "Radek", "Tomek"
+# tupla1[1] = 190  # TypeError: 'tuple' object does not support item assignment
+
+# zbiór - set
+# przechowuje unikalne wartości, nie zachowuje kolejnosci
+lista = [2, 5, 6, 8, 6, 7, 8, 5, 9]
+zbior = set(lista)
+print(zbior)  # {2, 5, 6, 7, 8, 9}
+
+pusty_zbior = set()  # tylko i wyłącznie słowko set
+pusty_zbior.add(15)
+print(pusty_zbior)  # {15}
+
+
