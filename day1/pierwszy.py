@@ -1,4 +1,5 @@
 import sys
+from time import sleep
 
 print()  # wypisz/wydrukuj
 
@@ -200,4 +201,21 @@ pusty_zbior = set()  # tylko i wyłącznie słowko set
 pusty_zbior.add(15)
 print(pusty_zbior)  # {15}
 
+# słownik -> klucz - wartosc
+slownik = {'name': 'Radek', 'age': 56}
+print(slownik)  # {'name': 'Radek', 'age': 56}
+print(type(slownik))  # <class 'dict'>
 
+print(slownik.keys())  # dict_keys(['name', 'age'])
+print(slownik.values())  # dict_values(['Radek', 56])
+print(slownik.items())  # dict_items([('name', 'Radek'), ('age', 56)])
+
+print(slownik['name'])  # Radek
+print(slownik.get('age'))  # 56
+
+pusty_slownik = {}
+print(pusty_slownik)  # {}
+print(type(pusty_slownik))  # <class 'dict'>
+
+p_s = dict()
+print(p_s)  # {}
