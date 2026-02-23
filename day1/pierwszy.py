@@ -55,3 +55,13 @@ print(0.1 + 0.9)  # 1.0
 #  For example, in a floating-point arithmetic with five base-ten digits,
 #  the sum 12.345 + 1.0001 = 13.3451 might be rounded to 13.345.
 # decimal - pozwala ominąć problem zaokroglenia
+
+# zmienna - pudełko na dane
+# typowanie dynamiczne
+name = "Radek"
+print(name)  # Radek
+print(type(name))  # <class 'str'>
+
+name = 90
+print(name)
+print(type(name))
