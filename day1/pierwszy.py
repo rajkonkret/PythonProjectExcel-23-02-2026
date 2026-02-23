@@ -65,3 +65,12 @@ print(type(name))  # <class 'str'>
 name = 90
 print(name)
 print(type(name))
+
+# rzutowanie typów
+a = "1"
+b = 0
+# print(a + b)
+print(int(a) + b)  # 1, int() - rzutowanie na liczbę
+print(int(a) + int(b))  # 1
+
+print(str(1) + str(1))  # str() - rzutowanie na string
