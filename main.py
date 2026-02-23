@@ -18,3 +18,6 @@ if __name__ == '__main__':
 # Hi, PyCharm
 # 2x shift - podreczne menu
 # theme, wheel
+# https://peps.python.org/pep-0008/
+# ctrl alt l - formatowanie pep8
+# ctrl / - komentarz
