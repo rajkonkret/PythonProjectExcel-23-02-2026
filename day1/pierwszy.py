@@ -219,3 +219,16 @@ print(type(pusty_slownik))  # <class 'dict'>
 
 p_s = dict()
 print(p_s)  # {}
+
+# input() - wczytanie danych o użytkownika
+
+# tekst = input("Podaj imię:")  # str
+# print(tekst)
+# print(type(tekst))
+
+a = input("Podaj pierwszą liczbę:")
+b = input("Podaj drugą liczbę:")
+print(int(a) + float(b))
+# Podaj pierwszą liczbę:1
+# Podaj drugą liczbę:2
+# 3.0
