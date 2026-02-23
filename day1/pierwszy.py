@@ -88,3 +88,46 @@ print(tekst.upper())  # WITAJ ŚWIECIE
 nowy_tekst = tekst.upper()
 print(nowy_tekst)  # WITAJ ŚWIECIE
 
+zmienna1 = "GROSS"
+zmienna2 = "groß"
+
+print(zmienna1.lower() == zmienna2.lower())  # == porównanie, False
+print(zmienna1.casefold() == zmienna2.casefold())  # True
+
+# typ logiczny True, False
+print(1 != 0)  # rózne
+
+name = "Radek"
+# f - string
+print(f"Nazywam się: {name}")  # Nazywam się: Radek
+
+a = 4.5678
+print(f"Liczba: {a}")  # Liczba: 4.5678
+print(f"Liczba: {a:.2f}")  # Liczba: 4.57
+
+print("Liczba:", a)  # Liczba: 4.5678
+
+# sep
+#         string inserted between values, default a space.
+#       end
+#         string appended after the last value, default a newline.
+
+print("Liczba:", a, sep=" <> ")  # Liczba: <> 4.5678
+
+# %f - float
+print("Liczba: %f" % a)  # Liczba: 4.567800
+print("Liczba: %.2f" % a)  # Liczba: 4.57
+
+# print("Liczba: %f" % "Radek")  # TypeError: must be real number, not str
+
+print("""
+Tekst
+    wielolinijkowy""")
+
+# "Tekst
+#     wielolinijkowy"
+
+"""Komentarz
+    wielolinijkowy - dokumentacja"""
+
+print(print.__doc__)
