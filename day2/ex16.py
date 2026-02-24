@@ -20,3 +20,15 @@ marks_data = [
     {"Name": "Darek", "Marks": 199},
     {"Name": "John", "Marks": 169},
 ]
+
+height_data_df = pd.DataFrame(height_data)
+weight_data_df = pd.DataFrame(weight_data)
+marks_data_df = pd.DataFrame(marks_data)
+
+writer = pd.ExcelWriter('excel_with_multiple_sheets.xlsx', engine="xlsxwriter")
+
+height_data_df.to_excel(writer, sheet_name="height", index=False)
+weight_data_df.to_excel(writer, sheet_name="weight", index=False)
+marks_data_df.to_excel(writer, sheet_name="marks", index=False)
+
+writer.close()
