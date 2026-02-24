@@ -26,6 +26,39 @@ data.info()
 data = [
     ["Mark", 55, "Włochy", 4.5, "Europa"],
     ["Jhon", 55, "USA", 4.5, "Ameryka"],
-    ["Tin", 55, "USA", 4.5, "ameryka"],
+    ["Tin", 55, "USA", 4.5, "Ameryka"],
     ["Jenny", 55, "Niemcy", 4.5, "Europa"],
 ]
+
+df = pd.DataFrame(data=data,
+                  columns=['imie', 'wiek', 'kraj', 'ocena', 'kontynent'],
+                  index=[1001, 1000, 1002, 1003])
+
+print(df)
+#        imie  wiek    kraj  ocena kontynent
+# 1001   Mark    55  Włochy    4.5    Europa
+# 1000   Jhon    55     USA    4.5   Ameryka
+# 1002    Tin    55     USA    4.5   ameryka
+# 1003  Jenny    55  Niemcy    4.5    Europa
+
+df.info()
+
+print(df.index)  # Index([1001, 1000, 1002, 1003], dtype='int64')
+
+df.index.name = "numer"
+print(df)
+#         imie  wiek    kraj  ocena kontynent
+# numer
+# 1001    Mark    55  Włochy    4.5    Europa
+# 1000    Jhon    55     USA    4.5   Ameryka
+# 1002     Tin    55     USA    4.5   ameryka
+# 1003   Jenny    55  Niemcy    4.5    Europa
+
+# sortowanie danych
+print(df.sort_values(['kontynent', 'wiek']))
+#         imie  wiek    kraj  ocena kontynent
+# numer
+# 1000    Jhon    55     USA    4.5   Ameryka
+# 1002     Tin    55     USA    4.5   Ameryka
+# 1001    Mark    55  Włochy    4.5    Europa
+# 1003   Jenny    55  Niemcy    4.5    Europa
