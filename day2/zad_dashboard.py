@@ -6,7 +6,7 @@ from pathlib import Path
 from dash import Dash, html, dcc, dash_table, Input, Output, callback, no_update
 import plotly.express as px
 
-FILE = "sprzedaz.xlsx"  # plik przygotowany wcześniej (Transakcje, Produkty)
+FILE = "sprzedaz-2.xlsx"  # plik przygotowany wcześniej (Transakcje, Produkty)
 
 # -------------------------
 # Ładowanie i przygotowanie danych
