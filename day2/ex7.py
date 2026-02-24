@@ -2,8 +2,8 @@ import openpyxl
 from openpyxl.chart import Reference, BarChart
 from openpyxl.chart.axis import ChartLines
 
-filname = 'video2.xlsx'
-wb = openpyxl.load_workbook(filname)
+filename = 'video2.xlsx'
+wb = openpyxl.load_workbook(filename)
 ws = wb['Total Sales by Genre']
 
 # dane do wyjresu
@@ -41,5 +41,5 @@ chart.x_axis.majorGridlines = ChartLines()
 
 ws.add_chart(chart, 'D2')
 
-wb.save(filname)
+wb.save(filename)
 wb.close()
