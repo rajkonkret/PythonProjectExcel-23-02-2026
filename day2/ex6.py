@@ -1,4 +1,5 @@
 import openpyxl
+# https://fiszki-go.cytr.us/
 
 filename = 'video2.xlsx'
 
