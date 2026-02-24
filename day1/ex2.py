@@ -76,5 +76,5 @@ for ele1, ele2, ele3, ele4, ele5, ele6 in my_list:
 # dopisanie nowej kolumny
 ws['K1'] = "Sum of Sales"
 
-wb.save('video2.xlsx')
+wb.save('video2old.xlsx')
 wb.close()

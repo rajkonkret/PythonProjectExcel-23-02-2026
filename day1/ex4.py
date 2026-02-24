@@ -2,7 +2,7 @@ import openpyxl
 
 filename = 'video2.xlsx'
 
-# wb = openpyxl.load_workbook('video2.xlsx')
+# wb = openpyxl.load_workbook('video2old.xlsx')
 wb = openpyxl.load_workbook(filename)
 ws = wb['vgsales']
 
